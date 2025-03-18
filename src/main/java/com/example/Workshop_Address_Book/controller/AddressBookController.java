@@ -42,5 +42,4 @@ public class AddressBookController {
         addressBookService.deleteContact(id);
         return ResponseEntity.noContent().build();
     }
-
 }
