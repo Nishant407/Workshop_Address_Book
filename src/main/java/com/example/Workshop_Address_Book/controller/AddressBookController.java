@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RestController
 @RequestMapping("/api/addressbook")
 public class AddressBookController {
@@ -41,4 +42,5 @@ public class AddressBookController {
         addressBookService.deleteContact(id);
         return ResponseEntity.noContent().build();
     }
+
 }
